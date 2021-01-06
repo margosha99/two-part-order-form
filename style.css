@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.tabs {
+  width: 220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.tabs__item {
+  background-color: #b8b8b8;
+  padding: 10px;
+  display: inline-block;
+  color: #dddddd;
+}
+.tabs .active {
+  border: 2px solid #000;
+  color: #e4cd00;
+  font-weight: 900;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 395px;
+  margin: 1% auto;
+  overflow: hidden;
+}
+
+.reg-form {
+  position: absolute;
+  left: 25px;
+  width: 250px;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+.reg-form__item {
+  margin: 10px auto;
+}
+.reg-form__item > label {
+  display: inline-block;
+  width: 49px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.reg-form__item > p {
+  font-weight: 700;
+  margin: 5px 0;
+}
+.reg-form__item > textarea {
+  margin-left: 38px;
+}
+.reg-form__button {
+  float: right;
+  color: #e0d206;
+  width: 100px;
+  padding: 5px;
+  font-weight: 900;
+  border: 1px solid black;
+  outline: none;
+  font-size: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.reg-form .label-wide {
+  width: 83px;
+}
+.reg-form .error {
+  display: block;
+  color: #d31818;
+  margin-left: 54px;
+}
+.reg-form .error-order {
+  color: #d31818;
+}
+.reg-form .error-order--package, .reg-form .error-order--frequency {
+  color: #d31818;
+}
+
+.reg-form2 {
+  margin: 0 auto;
+  width: 250px;
+}
+.reg-form2__item-textarea {
+  font-weight: 900;
+}
+.reg-form2__item > label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.reg-form2__item > p {
+  margin: 5px;
+  font-weight: 900;
+}
+.reg-form2__button {
+  float: right;
+  color: #e0d206;
+  width: 100px;
+  padding: 5px;
+  font-weight: 900;
+  border: 1px solid black;
+  outline: none;
+  font-size: 20px;
+  border-radius: 25px;
+}
+.reg-form2 .error-order {
+  display: block;
+  color: #d31818;
+  margin-bottom: 5px;
+}
+.reg-form2 .error-order--package, .reg-form2 .error-order--frequency {
+  display: block;
+  color: #d31818;
+  margin-bottom: 5px;
+}
+
+#reg-form2 {
+  left: 300px;
+}
+
+.form-data {
+  width: 316px;
+  margin: 10px auto;
+}
+.form-data__field {
+  padding: 5px;
+  background-color: #cccccc;
+}
+.form-data__field > p {
+  margin: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+.form-data__field > span {
+  display: block;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">    <title>Create a Customer page</title>
+</head>
+<body>
+    <h3>Sign Up</h3>
+    <div class="tabs">
+        <p class="tabs__item active" id="user-info">Your info</p>
+        <p class="tabs__item" id="user-preferences">Your preferences</p>
+    </div>
+    <section class="container">
+        <form action="" class="reg-form" id="reg-form1" >
+            <div class="reg-form__item">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" > 
+                <small class="error"></small>                   
+            </div>
+
+            <div class="reg-form__item">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <small class="error"></small> 
+            </div>
+
+            <div class="reg-form__item">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone">
+                <small class="error"></small> 
+            </div>
+
+            <div class="reg-form__item">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address">
+                <small class="error"></small> 
+            </div>
+
+            <div class="reg-form__item">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city">
+                <small class="error"></small> 
+            </div>
+
+            <div class="reg-form__item">    
+                <label for="state">State</label>
+                <input type="text" name="state" id="state">
+                <small class="error"></small> 
+            </div>
+
+            <div class="reg-form__item">
+                <label for="zip">Zip</label>
+                <input type="text" name="zip" id="zip">
+                <small class="error"></small> 
+            </div>
+
+            <button type="button" class="reg-form__button" 
+            id="next" >Next &#62;</button>
+        </form>
+
+        <form action="" class="reg-form" id="reg-form2">
+            <input type="hidden" name="name" id="name" > 
+            <input type="hidden" name="email" id="email">
+            <input type="hidden" name="phone" id="phone">
+            <input type="hidden" name="address" id="address">
+            <input type="hidden" name="city" id="city">
+            <input type="hidden" name="street" id="state">
+            <input type="hidden" name="zip" id="zip">
+
+            <div class="reg-form__item">
+                <label for="allergies" class="reg-form__item label-wide" >Food allergies</label>
+                <textarea name="allergies" id="allergies" cols="25" rows="5"></textarea>
+                <small class="error-order"></small>
+            </div>
+
+            <div class="reg-form__item">
+                <p >Frequency</p>
+                <small class="error-order--frequency"></small>
+                <div class="reg-form__item-option">
+                    <input type="radio" name="frequency-option" id="weekly" value="weekly">
+                    <label for="weekly">Weekly</label>    
+                </div>
+
+                <div class="reg-form__item-option">
+                    <input type="radio" name="frequency-option" id="biweekly" value="biweekly">
+                    <label for="biweekly">Biweekly</label>    
+                </div>
+
+                <div class="reg-form__item-option">
+                    <input type="radio" name="frequency-option" id="monthly" value="monthly">
+                    <label for="monthly">Monthly</label>    
+                </div>
+            </div>
+
+            <div class="reg-form__item">   
+                <p>Package size</p>
+                <small class="error-order--package"></small>
+                <div class="reg-form__item-option">
+                    <input type="radio" name="package-option" id="taste-test" value="taste-test">
+                    <label for="taste-test">Taste test</label>    
+                </div>
+
+                <div class="reg-form__item-option">
+                    <input type="radio" name="package-option" id="healthy" value="healthy">
+                    <label for="healthy">Healthy Highlight</label>    
+                </div>
+
+                <div class="reg-form__item-option">
+                    <input type="radio" name="package-option" id="full-plate" value="full-plate">
+                    <label for="full-plate">Full plate</label>    
+                </div>
+            </div>
+
+            <button type="button" class="reg-form__button" id="signup">Sign up</button>
+
+        </form>
+
+        <!-- <form action="" class="reg-form">
+
+            <div class="reg-form2__item">
+                <label for="allergies" class="reg-form2__item-textarea">Food allergies</label>
+                <textarea name="allergies" id="allergies" cols="25" rows="5"></textarea>
+                <small class="error-order"></small>
+            </div>
+
+            <div class="reg-form2__item">
+                <p >Frequency</p>
+                <small class="error-order--frequency"></small>
+                <div class="reg-form2__item-option">
+                    <input type="radio" name="frequency-option" id="weekly" value="weekly">
+                    <label for="weekly">Weekly</label>    
+                </div>
+
+                <div class="reg-form2__item-option">
+                    <input type="radio" name="frequency-option" id="biweekly" value="biweekly">
+                    <label for="biweekly">Biweekly</label>    
+                </div>
+
+                <div class="reg-form2__item-option">
+                    <input type="radio" name="frequency-option" id="monthly" value="monthly">
+                    <label for="monthly">Monthly</label>    
+                </div>
+            </div>
+
+            <div class="reg-form2__item">   
+                <p>Package size</p>
+                <small class="error-order--package"></small>
+                <div class="reg-form2__item-option">
+                    <input type="radio" name="package-option" id="taste-test" value="taste-test">
+                    <label for="taste-test">Taste test</label>    
+                </div>
+
+                <div class="reg-form2__item-option">
+                    <input type="radio" name="package-option" id="healthy" value="healthy">
+                    <label for="healthy">Healthy Highlight</label>    
+                </div>
+
+                <div class="reg-form2__item-option">
+                    <input type="radio" name="package-option" id="full-plate" value="full-plate">
+                    <label for="full-plate">Full plate</label>    
+                </div>
+            </div>    
+            <button class="reg-form2__button" onclick="validateForm(event)">Sign up</button>
+        </form> -->
+    </section>
+    <div class="form-data"></div>
+    <script src="script.js"></script>
+</body>
+</html>

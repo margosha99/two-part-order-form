@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h3{
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+}
+.tabs{
+    width: 220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    &__item{
+        background-color: #b8b8b8;
+        padding: 10px;
+        display: inline-block;
+        color: #dddddd;
+    }
+    .active{
+    border: 2px solid #000;
+    color: rgb(228, 205, 0);
+    font-weight: 900;
+    }
+}
+.container{
+    position: relative;
+    width: 300px;
+    height: 395px;
+    margin: 1% auto;
+    overflow: hidden;
+}
+
+.reg-form{
+    position: absolute;
+    left: 25px;
+    width: 250px;
+    margin: 0 auto;
+    transition: 0.5s;
+    
+    &__item{
+        margin: 10px auto ;
+        >label{
+            display:inline-block;
+            width: 49px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        >p{
+            font-weight: 700;
+            margin: 5px 0;
+        }
+        >textarea{
+            margin-left: 38px;
+        }
+    }
+    &__button{
+        float: right;
+        color: rgb(224, 210, 6);
+        width: 100px;
+        padding: 5px;
+        font-weight: 900;
+        border: 1px solid black;
+        outline: none;
+        font-size: 20px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    .label-wide{
+        width: 83px;
+    }
+    .error{
+      display:block;
+        color: rgb(211, 24, 24);
+        margin-left: 54px;
+    }
+    .error-order{
+        color:rgb(211, 24, 24);
+        &--package, &--frequency{
+            color: rgb(211, 24, 24);;
+        }
+    }
+}
+
+.reg-form2{
+    margin: 0 auto;
+    width: 250px;
+    &__item-textarea{
+        font-weight: 900;
+    }
+    &__item{
+        >label{
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        >p{
+            margin: 5px;
+            font-weight: 900;
+        }
+    }
+    &__button{
+        float: right;
+        color: rgb(224, 210, 6);
+        width: 100px;
+        padding: 5px;
+        font-weight: 900;
+        border: 1px solid black;
+        outline: none;
+        font-size: 20px;
+        border-radius: 25px;
+    }
+    .error-order{
+        &--package, &--frequency{
+            display:block;
+            color: rgb(211, 24, 24);
+            margin-bottom: 5px;
+        }
+        display:block;
+        color: rgb(211, 24, 24);
+        margin-bottom: 5px;
+    }
+}
+
+#reg-form2{
+    left: 300px;
+}
+
+.form-data{
+    width: 316px;
+    margin: 10px auto;
+    &__field{
+        padding: 5px;
+        background-color: #cccccc;
+        >p{
+            margin: 5px;
+            font-size: 18px;
+            text-align: center;
+        }
+        >span{
+            display: block;
+        }
+    }
+
+}
+
+@media screen and (min-width: 767px) {
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+    
+}
